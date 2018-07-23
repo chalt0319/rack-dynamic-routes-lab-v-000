@@ -40,9 +40,9 @@ class Application
       if !!@@items.find{|item| item.name == item_name}
         @@items.each do |item|
           if item.name == item_name
-          resp.write item.price}
+          resp.write item.price
           resp.status = 200
-          end 
+          end
         end
       else
         resp.write "Item not found"
